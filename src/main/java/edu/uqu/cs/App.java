@@ -8,6 +8,7 @@ package edu.uqu.cs;
 * Make sure to complete and submit your lab
 */
 
+import java.util.Scanner;
 
 public class App{
 
@@ -43,8 +44,6 @@ public class App{
 *
 */
  
-    public static void main(String [] args) {
-        
 
         /* Write your code here */
      
@@ -53,6 +52,60 @@ public class App{
        //call method phoneKeypad(string)
 
 
-    }
+      
+      public static void twisters() {
+ 
+ for (int i =1; i <=110; i++){
+    
+    if (i % 2 ==0){ 
+     system.out.print("Tweetle");
+        
+        if ( i % 4 == 0) {
+         system.out.print("Beetle");
+        }
 
+        if (i % 6 == 0) {
+          system.out.print("Poodle");
+        }
+    } else { 
+      system.out.print(" "+ i + " " );
+    }
+  }
 }
+
+
+public static void phoneKeypad (string text){ 
+
+ int digit = 0;
+   
+   for(int i = 0; i < str.length(); i++)
+        {
+            switch (str.toUpperCase().charAt(i))
+            {
+                case 'A': case 'B': case 'C':
+                 digit = 2; break;
+                case 'D': case 'E': case 'F': 
+                digit = 3; break;    
+                case 'G': case 'H': case 'I':
+                 digit = 4; break;
+                case 'J': case 'K': case 'L': 
+                digit = 5; break;
+                case 'M': case 'N': case 'O': 
+                digit = 6; break;
+                case 'P': case 'Q': case 'R': case 'S':
+                 digit = 7; break;
+                case 'T': case 'U': case 'V':
+                 digit = 8; break;
+                case 'W': case 'X': case 'Y': case 'Z': 
+                digit = 9; break;
+             }
+         }
+  System.out.print(digit);
+}
+
+public static void main(String [] args) {
+  twisters();
+  Scanner scr = new Scanner(System.in);
+  System.out.print(" Enter a strint ");
+
+phoneKeypad(scanner.nextline());
